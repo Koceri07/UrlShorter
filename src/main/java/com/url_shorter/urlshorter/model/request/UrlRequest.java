@@ -1,4 +1,10 @@
 package com.url_shorter.urlshorter.model.request;
 
-public class UrlRequest {
-}
+import jakarta.validation.constraints.NotBlank;
+
+public record UrlRequest(
+
+        @NotBlank
+        String originalUrl
+
+) {}
